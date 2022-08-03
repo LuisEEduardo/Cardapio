@@ -26,8 +26,9 @@ namespace CardapioAplicacao.Data.Repositories
         public async Task<T> SelecionarPorId(Expression<Func<T, bool>> expression)
             => await _context.Set<T>().FirstOrDefaultAsync(expression);
 
-        public void Excluir(T entidade)
+        public async Task ExcluirPorId(Expression<Func<T, bool>> expression)
         {
+            var entidade = await SelecionarPorId(expression);
             _context.Set<T>().Remove(entidade);
         }
 
