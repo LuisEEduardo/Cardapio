@@ -23,5 +23,5 @@ public class Bootstrap
         // Connection string 
         services.AddDbContext<Contexto>(options => 
             options.UseSqlServer(configuration.GetConnectionString("Conexao")));
-    }
+    }    
 }

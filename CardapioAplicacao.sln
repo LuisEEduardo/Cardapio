@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardapioAplicacao.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardapioAplicacao.Infra.Ioc", "CardapioAplicacao.Infra.Ioc\CardapioAplicacao.Infra.Ioc.csproj", "{AEDE455C-FA59-419A-AEA1-7B51416D3F3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardapioAplicacao.Api", "CardapioAplicacao.Api\CardapioAplicacao.Api.csproj", "{905F5B64-5639-43A6-A60E-1E2E8ADD3A63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AEDE455C-FA59-419A-AEA1-7B51416D3F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEDE455C-FA59-419A-AEA1-7B51416D3F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEDE455C-FA59-419A-AEA1-7B51416D3F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905F5B64-5639-43A6-A60E-1E2E8ADD3A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905F5B64-5639-43A6-A60E-1E2E8ADD3A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905F5B64-5639-43A6-A60E-1E2E8ADD3A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905F5B64-5639-43A6-A60E-1E2E8ADD3A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
