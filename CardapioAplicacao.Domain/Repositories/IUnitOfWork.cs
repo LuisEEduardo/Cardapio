@@ -1,6 +1,6 @@
 ﻿namespace CardapioAplicacao.Domain.Repositories;
 
-public interface IUnitOfWork
+public interface IUnitOfWork : IDisposable
 {
     ICardapioRepositorio CardapioRepositorio { get; }
     IPizzaRepositorio PizzaRepositorio { get; }

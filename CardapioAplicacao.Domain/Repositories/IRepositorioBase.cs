@@ -1,10 +1,12 @@
-﻿namespace CardapioAplicacao.Domain.Repositories;
+﻿using System.Linq.Expressions;
 
-public interface IRepositorioBase<T> : IDisposable where T : class
+namespace CardapioAplicacao.Domain.Repositories;
+
+public interface IRepositorioBase<T> 
 {
     void Incluir(T entidade);
     void Alterar(T entidade);
-    Task<T> SelecionarPorId(int id);
-    void Excluir(int id);
+    Task<T> SelecionarPorId(Expression<Func<T, bool>> expression);
+    void Excluir(T entidade);
     IQueryable<T> SelecionarTodos();
 }

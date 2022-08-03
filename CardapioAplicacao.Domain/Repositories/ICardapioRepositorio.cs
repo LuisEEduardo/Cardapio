@@ -1,5 +1,7 @@
-﻿namespace CardapioAplicacao.Domain.Repositories;
+﻿using CardapioAplicacao.Domain.Entities;
 
-public interface ICardapioRepositorio : IRepositorioBase<ICardapioRepositorio>
+namespace CardapioAplicacao.Domain.Repositories;
+
+public interface ICardapioRepositorio : IRepositorioBase<Cardapio>
 {
 }

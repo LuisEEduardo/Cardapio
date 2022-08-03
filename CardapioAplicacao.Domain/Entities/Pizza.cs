@@ -6,11 +6,13 @@ public class Pizza : Base
     {
         Nome = nome;
         Ingredientes = ingredientes;
+        Cardapios = new List<Cardapio>();
     }
 
     public string Nome { get; private set; }
     public string Ingredientes { get; private set; }
 
+    public IList<Cardapio> Cardapios { get; set; }
 
     public void AlterarNome(string nome)
     {
