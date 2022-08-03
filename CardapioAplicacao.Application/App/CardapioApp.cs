@@ -5,12 +5,12 @@ using CardapioAplicacao.Domain.Entities;
 
 namespace CardapioAplicacao.Application.App;
 
-public class CardapioAplicacao : ICardapioAplicacao
+public class CardapioApp : ICardapioAplicacao
 {
     private readonly IMapper _mapper;
     private Cardapio _cardapio;
 
-    public CardapioAplicacao(IMapper mapper)
+    public CardapioApp(IMapper mapper)
     {
         _mapper = mapper;
     }

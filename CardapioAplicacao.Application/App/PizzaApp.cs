@@ -6,12 +6,12 @@ using CardapioAplicacao.Domain.Repositories;
 
 namespace CardapioAplicacao.Application.App;
 
-public class PizzaAplicacao : IPizzaAplicacao
+public class PizzaApp : IPizzaAplicacao
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public PizzaAplicacao(IUnitOfWork unitOfWork, IMapper mapper)
+    public PizzaApp(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
