@@ -3,13 +3,12 @@ using CardapioAplicacao.Infra.Ioc;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-
-Bootstrap.RegistroDeServicos(builder.Services, builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+Bootstrap.RegistroDeServicos(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 
