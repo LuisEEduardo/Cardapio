@@ -5,6 +5,8 @@ namespace CardapioAplicacao.Application.Interface;
 public interface ICardapioAplicacao
 {
     void CriarCardapio();
-    void AdicionarSabor(PizzaViewModel pizza);
-    void RemoverSabor(PizzaViewModel pizza);
+    Task AdicionarSabor(int pizzaId);
+    Task RemoverSabor(int pizzaId);
+    IEnumerable<PizzaViewModel> SelecionarTodosSabores();
+    PizzaViewModel SelecionarSaborPorId(int id);
 }
